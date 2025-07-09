@@ -25,9 +25,9 @@ Model weights for each custom-trained YOLOv8 model can be downloaded from here:
 
 ## ⚽ Demos
 
-Input | Output
-:-: | :-:
-<video src='https://github.com/codedarrylcode/awareness/raw/refs/heads/main/data/train/08fd33_4.mp4' width=720></video> | <video src='https://github.com/codedarrylcode/awareness/raw/refs/heads/main/videos/output/tracking_with_radar.mp4' width=720></video>
+https://github.com/user-attachments/assets/a3583940-6fc0-481b-91f8-288944320e04
+
+https://github.com/user-attachments/assets/82b3282f-4f04-46b7-bbbd-4b95f2caacda
 
 ## Credits
 
