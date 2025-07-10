@@ -388,8 +388,8 @@ def draw_pitch_voronoi_diagram(
     distances_team_1 = calculate_distances(team_1_xy, x_coordinates, y_coordinates)
     distances_team_2 = calculate_distances(team_2_xy, x_coordinates, y_coordinates)
 
-    min_distances_team_1 = np.min(distances_team_1, axis=0)
-    min_distances_team_2 = np.min(distances_team_2, axis=0)
+    min_distances_team_1 = np.min(distances_team_1, axis=0, initial = 12_000)
+    min_distances_team_2 = np.min(distances_team_2, axis=0, initial = 12_000)
 
     control_mask = min_distances_team_1 < min_distances_team_2
 
@@ -475,8 +475,8 @@ def draw_pitch_voronoi_diagram_with_blend(
     distances_team_2 = calculate_distances(team_2_xy, x_coordinates, y_coordinates)
 
     # Find the shortest distance for a team to a coordinate
-    min_distances_team_1 = np.min(distances_team_1, axis=0)
-    min_distances_team_2 = np.min(distances_team_2, axis=0)
+    min_distances_team_1 = np.min(distances_team_1, axis=0, initial = 12_000)
+    min_distances_team_2 = np.min(distances_team_2, axis=0, initial = 12_000)
 
     # Increase steepness of the blend effect
     steepness = 15  # Increased steepness for sharper transition

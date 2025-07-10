@@ -4,7 +4,7 @@ import supervision as sv
 
 class Projector:
     def __init__(self, min_conf = 0.5):
-        self.conf = 0.5
+        self.conf = min_conf
         self.key_points = None
         self.anchors_filter = None
         self.anchors = None
